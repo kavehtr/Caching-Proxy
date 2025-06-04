@@ -1,0 +1,26 @@
+{
+  "name": "caching-proxy",
+  "version": "1.0.0",
+  "description": "This caching proxy server will forward requests to the actual server and cache the responses. If the same request is made again, it will return the cached response instead of forwarding the request to the server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kavehtr/Caching-Proxy.git"
+  },
+  "author": "kaveh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kavehtr/Caching-Proxy/issues"
+  },
+  "homepage": "https://github.com/kavehtr/Caching-Proxy#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.2",
+    "typescript": "^5.8.3"
+  }
+}
