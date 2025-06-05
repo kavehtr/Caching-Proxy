@@ -6,17 +6,21 @@ This caching proxy server will forward requests to the actual server and cache t
 
 navigate to the root directory of the project and use this command:
 
-$ npm install
+npm install
 
 # How To Use
 
 compile the code with this command :
 
-$ npm run build
+npm run build
 
 then run with this command :
 
-$ npm start -- --port <number> --origin <url>
+npm start -- --port <number> --origin <url>
 
 --port is the port on which the caching proxy server will run.
 --origin is the URL of the server to which the requests will be forwarded.
+
+# Project URL
+
+https://roadmap.sh/projects/caching-server
