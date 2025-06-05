@@ -2,9 +2,14 @@
   "name": "caching-proxy",
   "version": "1.0.0",
   "description": "This caching proxy server will forward requests to the actual server and cache the responses. If the same request is made again, it will return the cached response instead of forwarding the request to the server.",
-  "main": "server.js",
+  "main": "cli.js",
   "scripts": {
-    "start": "node dist/server.js"
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "caching-proxy": "dist/cli.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +26,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
 }
